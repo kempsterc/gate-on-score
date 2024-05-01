@@ -1,4 +1,4 @@
-const axios = require('axios');
+ const axios = require('axios');
 
 const gremlinTeamID = process.env.INPUT_GREMLIN_TEAM_ID;
 const apiKey = process.env.INPUT_API_KEY;
