@@ -1,0 +1,18 @@
+name: Main Workflow
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+jobs:
+  build:
+    name: Run test using the action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run gate-on-score action code from commit
+        uses: ./
+        with:
+          gremlin_team_id: 20180feb-19a9-4a25-980f-eb19a9ca25d9
+          api_key: Yy1kYWIwNTVlYy0yMDlmLTU1NTQtODg4Ni0zNGI5ZjdhM2EyMmY6Y2tlbXBzdGVAdmlzYS5jb206NWNiMjg2ZDItZjQ3Zi00NzExLWIyODYtZDJmNDdmNjcxMTBi
+          service_id: 249d45a9-ab4a-4ea2-9d45-a9ab4aaea2fe
+          threshold: 90
