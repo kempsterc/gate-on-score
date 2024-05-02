@@ -13,6 +13,6 @@ jobs:
         uses: ./
         with:
           gremlin_team_id: 20180feb-19a9-4a25-980f-eb19a9ca25d9
-          api_key: Yy1kYWIwNTVlYy0yMDlmLTU1NTQtODg4Ni0zNGI5ZjdhM2EyMmY6Y2tlbXBzdGVAdmlzYS5jb206NWNiMjg2ZDItZjQ3Zi00NzExLWIyODYtZDJmNDdmNjcxMTBi
+          api_key: 8373fb5e78575bc607dc8bcf2e2797cec5bff2a15f2ee2cc526cae7d74724843
           service_id: 249d45a9-ab4a-4ea2-9d45-a9ab4aaea2fe
           threshold: 90
