@@ -8,7 +8,7 @@ const threshold = parseInt(process.env.INPUT_THRESHOLD, 10);
 const apiCall = async () => {
   try {
     const response = await axios.get(`https://api.gremlin.com/v1/services/${serviceId}/score?teamId=${gremlinTeamID}`, {
-      headers: { 'Authorization': `Bearer ${apiKey}` }
+      headers: { 'Authorization': `Key ${apiKey}` }
     });
 
     if (Math.round(response.data) < threshold) {
